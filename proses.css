@@ -1,0 +1,237 @@
+.content{
+    width: 80%;     
+}
+
+.daftar-produk{
+    display: flex;
+    justify-content: space-between;
+}
+
+.produk-keranjang
+{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 90%;
+    height: 30%;
+    margin: 5px;
+    background-color: #f5b4b2;
+    border-radius: 10px;
+}
+
+.produk-keranjang img
+{
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin-bottom: 5px;
+    float:left;
+}
+
+.produk-keranjang h4{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.produk-keranjang h5{
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-bottom: 5px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.scrollable-content {
+    width: 60%; 
+    height: 400px; 
+    overflow: scroll;
+    overflow-x: hidden; 
+}
+
+.detail-produk{
+    width:60%;
+    float:left;
+    margin-left:10px;
+}
+
+.detail-produk input{
+    width: 30px;
+    text-align: center;
+}
+
+.btn-proses{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-belanja{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 35%;
+    height: 50%;
+    background-color: #f5b4b2;
+    border-radius: 10px;
+}
+
+.total-belanja .text
+{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
+.tombol-proses{
+    color: #2b2b2b;
+    background-color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    width: 90%;
+    height: 30px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol-proses:hover{
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+}
+
+label{
+    color: white;
+}
+
+.alamat{
+    width: 100%;
+    display: block;
+}
+
+.input-text{
+    width: 47%;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.input-text input{
+    width: 100%;
+    height: 25px;
+    border: 0px;
+}
+
+.input-text select{
+    width: 100%;
+    height: 25px;
+    border: 0px;
+}
+
+textarea{
+    
+    width: 77%;
+    border: 0px;
+}
+
+.invoice{
+    width: 70%;
+    border: 1px solid #939393;
+}
+
+.invoice-header{
+    background-color: #f5b4b2;
+    padding: 40px;
+    color: white;
+}
+
+.invoice-footer{
+    background-color: #f5b4b2;
+    padding: 40px;
+    color: white;
+}
+
+.invoice-judul{
+    float:right;
+    width: 30%;
+    text-align: center;
+}
+
+.pembayaran{
+    background-color: white;
+}
+
+.invoice-content{
+    padding:40px;
+}
+
+.invoice-content table{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.invoice-content th,td{
+    padding:5px;
+    text-align: center;
+}
+
+.transfer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; 
+}
+
+.transfer.show {
+    max-height: 1000px; 
+}
+
+.dompet-digital {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; 
+}
+
+.dompet-digital.show {
+    max-height: 1000px; 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.metode label {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: #f5b4b2;
+    border: 2px solid white;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #f5b4b2; /* Change background color when radio button is checked */
+    color: #ffffff;
+    border: 1px solid white;
+}
+
+
+@media screen and (max-width: 900px) { 
+  .daftar-produk{
+    width: 120%;
+  }
+  input[type="text"]{
+    width: 200%;
+  }
+  input[type="number"]{
+    width: 200%;
+  }
+  .alamat{
+  padding-top: 50px;
+  }
+  .tombol-proses{
+    width: 200%;
+  } 
+}

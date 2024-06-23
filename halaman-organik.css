@@ -1,0 +1,382 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+
+  header{
+    width: 100%;
+    }
+    
+    footer{
+    width: 100%;
+    padding-top: 10px;
+    }
+     
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color:rgb(248, 242, 238);
+    }
+  
+  .logo{
+    margin-right: 120px;
+  }
+  
+  .nav-left {
+    margin-left: 24px;
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .bar-btn {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+  }
+  
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    padding: 14px;
+    margin: 6px;
+    font-weight: 300;
+  }
+  
+  .nav-menu ul li {
+    margin: 10px;
+  }
+  
+  .nav-right{
+    padding-left: 40px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-button {
+    padding: 5px;
+    height: 50px;
+    width: 100px;
+    background-color:rgb(248, 242, 238);
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  
+  .dropdown-button:hover, :focus{
+    background-color: #717171;
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Menampilkan dropdown saat tombol dihover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .user{
+    padding: 10px;
+    box-shadow: 0px 5px 0px 0px rgb(164, 164, 164)
+  }
+  
+  .nav-item {
+    margin-left: 5rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+        background-color:rgb(248, 242, 238);
+        transition: all 0.5s ease-out;
+    }
+  
+    .nav-menu.active {
+        left: 0;
+        background-color: #f9f9f9;
+    }
+  
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+  
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+  
+  }
+  
+  .hamburger.active .bar-btn:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar-btn:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar-btn:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .bar {
+    color: black;
+    font-size: 20;
+    margin: 10px;
+  }
+
+  
+  .bar:link {
+    color: rgba(153, 73, 73, 0.877);
+  }
+  
+  /* visited link */
+  .bar:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  .bar:hover {
+    color: rgba(153, 73, 73, 0.877);
+  }
+  .content{
+    height: 100%; 
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .content h1{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-left: 10%;
+    padding: 2%;
+  }
+
+  .btn-list{
+    background-color: white;
+    border: 0px;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .btn-list:hover{
+    border: 3px solid #E1D6D6;
+  }
+
+  .content-list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image{
+    width: 50%;
+    height: 100%;
+  }
+
+  .image img{
+    width: 70%;
+    height: 90%;
+  }
+
+  .list{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .list p{
+    padding-top: 15px;
+    font-size: 18px;
+    text-align: justify;
+   }
+
+   .list a{
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+   }
+
+   .list a:hover{
+    color: #E1D6D6;
+   }
+  
+  .ending {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 162, 162);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .box {
+    width: 24%;
+    height: 33.3%;
+  }
+  .box-about {
+    padding-left: 17px;
+  }
+  .box-about h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 17px;
+    font-size: 40px;
+    color: white;
+  }
+  .box-about p {
+   text-align: justify;
+   padding-right: 10px;
+   font-size: 14px;
+  }
+  
+  .box-explore{
+    padding: 10px;
+  }
+  
+  .box-explore h2 {
+    color: white;
+  }
+  
+  .box h2 {
+    padding-bottom: 17px;
+  }
+  
+  .box h3 {
+    margin: 8px;
+  }
+  
+  .banner {
+      position: relative;
+      text-align: center;
+    padding-top: 70px;
+  }
+  
+  .networks {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  
+  .networks-outer {
+      display: table;
+      position: relative;
+      width: 5em;
+      height: 5em;
+      border: 2px solid white;
+      border-radius: 4em;
+      transition: background-color 0.2s ease-in-out;
+  }
+  
+  .networks-outer a {
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+  }
+  
+  .fa:before {
+      font-size: 40px;
+  }
+  
+  .networks:hover .networks-outer {
+      background: rgba(255,255,255,.5);
+      cursor: pointer;
+  }
+  
+  /**** Social-Network-Specific ****/
+  
+  .networks:hover .fa-facebook {
+      color: rgb(59,89,152);
+  }
+  
+  #facebook.networks-outer:hover {
+      border-color: rgb(59,89,152);
+  }
+  
+  .networks:hover .fa-instagram {
+      color: #FE7BE5;
+  }
+  
+  #instagram.networks-outer:hover {
+      border-color: #FE7BE5;
+  }
+  
+  .networks:hover .fa-whatsapp {
+      color: #05cc47;
+  }
+  
+  #whatsapp.networks-outer:hover {
+      border-color: #05cc47;
+  }
+  
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 108, 108);
+  }
+
+  .first { 
+    width: 90%; 
+    display: inline-block; 
+  } 
+
+  @media screen and (max-width: 900px) { 
+    .first { 
+      width: 100%;
+    }
+  } 
+  
